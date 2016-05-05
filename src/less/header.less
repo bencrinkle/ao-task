@@ -1,0 +1,138 @@
+#header {
+	background: #81ba2b;
+	color: #fff;
+	border-bottom: 1px solid #61a715;
+
+	#header-inner {
+		max-width: 990px;
+		@media (min-width: @screen-md-min) { 
+			margin: 0 auto;
+		}
+	}
+
+	#logo {
+		margin: 10px 0;
+
+		@media (min-width: @screen-md-min) {
+			padding-left: 0;
+		}		
+
+		img {
+			width: 70px;
+
+			@media (min-width: @screen-sm-min) {
+				width: 90px;
+			}
+
+			@media (min-width: @screen-md-min) {
+				width: auto;
+			}
+		} 
+	}
+
+	#header-right { 
+		margin-top: 10px;
+		
+		#header-right-top {
+			border-bottom: 1px solid #a6d067;
+			
+			@media (min-width: @screen-sm-min) {
+				padding-bottom: 10px;
+			}
+			
+
+			#features { 
+				.feature { 
+					height: 26px;
+					font-size: 11px;
+					line-height: 11px;
+					width: 15%;
+					float: left;
+
+					@media (min-width: @screen-md-min) {
+						width: 20%;
+					}
+
+					.feature-image {
+						float: left;
+					}
+
+					.feature-text {
+					    float: left;
+					    width: 64px;
+					    margin-left: 5px;
+					    margin-top: 2px;
+					}
+				} 
+			}
+
+			#telephone { 
+				
+				.telephone-image {
+					float: left;
+				}
+
+				.telephone-text {
+				    float: left;
+				    margin-left: 5px;
+				    line-height: 15px;
+
+					.number { 
+						font-size: 18px;
+						letter-spacing: 1px;
+					}
+
+					.open {
+						font-size: 11px;
+						text-transform: uppercase;
+					}
+				}			
+			}
+		}
+
+		#header-right-bottom {
+			padding-top: 10px;
+
+			#search {
+				background: #fff;
+				border-radius: 3px;
+
+				input {
+					border: none;
+					color: #adb2c1;
+					font-size: 15px;
+					background: none;
+				}
+
+				.search-button {
+					background: url('../img/icon-search.png') no-repeat;
+					width: 32px;
+					height: 32px;
+					float: left;
+					border: none;
+				}
+			}
+
+			.header-link {
+				float: left;
+				width: 33%;
+
+				.header-link-image {
+					float: left;
+				}
+
+				.header-link-text {
+					float: left;
+					margin-left: 5px;
+					line-height: 14px;
+					margin-top: 5px;
+					width: 46px;
+
+					.basket-total {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}
